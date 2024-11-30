@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Cocktails</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<form action="">
+			<div class="find">
+				<input type="search" id="search" placeholder="Название коктейля" />
+				<button>Найти</button>
+			</div>
+			<div class="change_div">
+				<button id="home">Главная</button>
+				<select name="" id="select">
+					<option value="All">Все</option>
+					<option value="Alcoholic">Алкогольный</option>
+					<option value="Non_Alcoholic">Безалкагольные</option>
+				</select>
+				<button id="random">Случайный коктейл</button>
+				<select name="" id="types_glasses">
+					<option value="All">Все стаканы</option>
+					<option value="Cocktail_glass">Cocktail glass</option>
+					<option value="Champagne_flute">Champagne flute</option>
+					<option value="Collins_Glass">Collins_Glass</option>
+					<option value="White_wine_glass">White_wine_glass</option>
+				</select>
+			</div>
+
+			<div id="output"></div>
+		</form>
+		<script src="js/cocktail.js"></script>
+	</body>
+</html>

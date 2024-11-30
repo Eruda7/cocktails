@@ -1,0 +1,255 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #1e2022;
+}
+
+body {
+	background-color: #eaeaea;
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	padding: 20px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #1e2022;
+}
+
+body {
+	background-color: #eaeaea;
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+}
+
+#output {
+	display: flex;
+	align-items: stretch;
+	gap: 1.25%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.card {
+	flex: 0 1 19%;
+	margin-bottom: 30px;
+	background-color: #ff715b;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	width: 100%;
+	border-bottom: 3px solid #1e2022;
+}
+
+.card h2 {
+	padding: 15px;
+	font-size: 1.2rem;
+	text-align: center;
+	color: #ffffff;
+	background-color: #1e2022;
+	border-radius: 5px;
+}
+
+.card button {
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+	padding: 10px 15px;
+	font-size: 1rem;
+	color: #ffffff;
+	background-color: #6c5b7b;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+	background-color: #355c7d;
+}
+
+form select:focus {
+	border-color: #ff715b;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1,
+h3,
+h4 {
+	text-align: center;
+	color: #333333;
+}
+
+p {
+	margin: 10px 0;
+	line-height: 1.5;
+}
+
+.find {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 20px;
+}
+
+.find input {
+	width: 65%;
+	padding: 15px;
+	font-size: 18px;
+	border: 2px solid #cccccc;
+	border-radius: 5px;
+	outline: none;
+	transition: 0.3s;
+}
+.find input:hover {
+	transform: scale(1.05);
+}
+.find input:focus {
+	border-color: #ff715b;
+}
+
+.find button {
+	width: 20%;
+	padding: 15px;
+	font-size: 18px;
+	background-color: #ff715b;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.find button:hover {
+	background-color: #d54c3a;
+	transform: scale(1.05);
+}
+
+.change_div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.change_div select {
+	padding: 15px;
+	font-size: 18px;
+	border: 2px solid #cccccc;
+	border-radius: 5px;
+	background-color: #ffffff;
+	outline: none;
+	transition: border-color 0.3s ease;
+}
+
+.change_div select:focus {
+	border-color: #ff715b;
+}
+
+.change_div button {
+	padding: 15px;
+	font-size: 18px;
+	background-color: #6c5b7b;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.change_div button:hover {
+	background-color: #355c7d;
+}
+
+#output > div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	min-width: 200px;
+}
+
+/* Изображение коктейля */
+#output > div img {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок коктейля */
+#output > div h1 {
+	font-size: 2rem;
+	color: #ff715b;
+	margin-bottom: 10px;
+}
+
+/* Тип алкоголя */
+#output > div h3 {
+	font-size: 1.2rem;
+	color: #6c5b7b;
+	margin-bottom: 15px;
+}
+
+/* Тип стакана */
+#output > div h4 {
+	font-size: 1rem;
+	color: #355c7d;
+	margin-bottom: 20px;
+}
+
+/* Список ингредиентов */
+#output > div ol {
+	list-style-type: decimal;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	max-width: 300px;
+	width: 100%;
+}
+
+#output > div ol li {
+	font-size: 1rem;
+	color: #1e2022;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Кнопка для деталей ингредиентов */
+#output > div ol li button {
+	font-size: 0.9rem;
+	padding: 5px 10px;
+	background-color: #ff715b;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#output > div ol li button:hover {
+	background-color: #d54c3a;
+}
